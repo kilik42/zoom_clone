@@ -1,3 +1,17 @@
+const { resolveSoa } = require('dns');
 const express = require('express');
+const app = express();
+const server = require('http').Server(app);
 
-const app = expres();
+
+app.get('/', (req,res) => {
+        
+    res.status(200).send("hello world");
+
+
+
+})
+
+
+
+server.listen(3030);
